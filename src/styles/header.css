@@ -18,15 +18,15 @@
 
 
 .nav{
-  height :120px;
+  height :100px;
   background-color: rgb(221, 250, 168);
 }
 
 .logo {
   position: relative;
   left: 10px;
-  top: 5px;
-  height: 100px;
+  
+  height: 90px;
 }
 #basic-nav-dropdown{
   background-color:rgb(111, 116, 111);

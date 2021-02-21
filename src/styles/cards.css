@@ -1,0 +1,35 @@
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  height: 158px;
+}
+.addtocart-logo {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inner-text {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: rgb(243, 125, 208);
+}
+
+.save {
+  color: green;
+}
+
+.button {
+  margin-left: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
