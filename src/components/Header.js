@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/header.css";
 import logo from "../images/logo.png";
-import {FaShoppingBasket} from "react-icons/fa"
+import { FaShoppingBasket } from "react-icons/fa";
 
 import {
   Form,
@@ -15,7 +15,7 @@ import {
 function Header() {
   return (
     <>
-      <Navbar className="nav" expand="lg">
+      <Navbar className="nav" expand="lg" fixed="top">
         <Navbar.Brand href="#home">
           {" "}
           <img className="logo" src={logo}></img>
@@ -36,17 +36,21 @@ function Header() {
             </NavDropdown>
           </Nav>
           <Form inline id="search-bar">
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" id="input-search" />
-            <Button variant="outline-success">Search</Button>
+            <FormControl
+              type="text"
+              placeholder="Search"
+              className="mr-sm-2"
+              id="input-search"
+            />
+            <Button>Search</Button>
           </Form>
           <Nav>
-          <div  className="basket">
-            <div className="basket-logo">
-              <FaShoppingBasket/>
+            <div className="basket">
+              <div className="basket-logo">
+                <FaShoppingBasket />
+              </div>
+              <h4>My Pantry</h4>
             </div>
-            <h4>My Pantry</h4>
-          </div>
-         
           </Nav>
         </Navbar.Collapse>
       </Navbar>
