@@ -1,6 +1,8 @@
-import React from "react";
+import { React, useState } from "react";
+import { useHistory, Link } from "react-router-dom";
 import "../styles/header.css";
 import logo from "../images/logo.png";
+import user from "../images/user.png";
 import { FaShoppingBasket } from "react-icons/fa";
 
 import {
@@ -44,6 +46,11 @@ function Header() {
             />
             <Button>Search</Button>
           </Form>
+          <Link to="/login" className="link">
+            <button className="userLogin">
+              <img src={user} alt="Login/SignUp" className="user"></img>
+            </button>
+          </Link>
           <Nav>
             <div className="basket">
               <div className="basket-logo">

@@ -1,0 +1,59 @@
+/* .Container{
+    background-color: rgba(128, 128, 128, 0.561);
+    width: 50%;
+    height: 400px;
+    margin: 80px auto;
+} */
+
+.bg {
+  background: url("../images/loginbg.jpg") center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.form-box {
+  width: 380px;
+  height: 450px;
+  background-color: rgba(41, 206, 206, 0.945);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 2%;
+  color: black;
+}
+.header-form {
+  margin-bottom: 40px;
+}
+button {
+  margin-bottom: 10px;
+}
+.message {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(36, 35, 35);
+  padding-top: 20px;
+}
+
+.signupbtn {
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid;
+}
+
+.btn {
+  background-color: rgb(49, 49, 49);
+}

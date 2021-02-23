@@ -6,9 +6,9 @@ function Footer() {
     <>
       <footer>
         <div className="footer">
-          <div class="column">
+          <div className="column">
             <ul>
-              <li class="title">BIG PANTRY</li>
+              <li className="title">BIG PANTRY</li>
               <li>
                 We allows you to walk away from the drudgery of grocery shopping
                 and welcome an easy relaxed way of browsing and shopping for
@@ -17,9 +17,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="column">
+          <div className="column">
             <ul>
-              <li class="title">OTHER LINKS</li>
+              <li className="title">OTHER LINKS</li>
               <li>
                 <a href="#">Terms & Conditions</a>
               </li>
@@ -35,9 +35,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="column">
+          <div className="column">
             <ul>
-              <li class="title">SHORT CUT</li>
+              <li className="title">SHORT CUT</li>
               <li>
                 <a href="#">Contact Us</a>
               </li>
@@ -53,39 +53,39 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="column">
+          <div className="column">
             <ul>
-              <li class="title">CONTACT US</li>
+              <li className="title">CONTACT US</li>
               <li>
                 <form action="#" method="post">
                   <input
                     type="email"
                     name="email"
                     placeholder="Email*"
-                    maxlength="80"
+                    maxLength="80"
                     required
                   />
-                  <button class="btn1">
-                    <i class="fa fa-paper-plane"></i>
+                  <button className="btn1">
+                    <i className="fa fa-paper-plane"></i>
                   </button>
                 </form>
               </li>
               <li>
                 <a href="#" title="Address,State,Country,Pincode">
-                  <i class="fa fa-map-marker"></i>
+                  <i className="fa fa-map-marker"></i>
                 </a>
                 <a href="#">
-                  <i class="fa fa-phone"></i>
+                  <i className="fa fa-phone"></i>
                 </a>
                 <a href="#">
-                  <i class="fa fa-envelope"></i>
+                  <i className="fa fa-envelope"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </footer>
-      <div class="sub-footer">
+      <div className="sub-footer">
         BIG PANTRY Copyright © 2021 BIG PANTRY - All rights reserved || Designed
         By: Suyash
       </div>

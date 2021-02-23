@@ -82,7 +82,7 @@ function Offers() {
             <card>
               <img src={offers.Image} className="offers-image"></img>
               <tag>Up To {offers.Offer}% OFF</tag>
-              <div class="img-text">{offers.Title}</div>
+              <div className="img-text">{offers.Title}</div>
             </card>
           );
         })}

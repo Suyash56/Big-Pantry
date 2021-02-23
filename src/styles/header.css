@@ -23,6 +23,20 @@
   height: 70px;
 }
 
+.user {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.userLogin {
+  margin-left: 140px;
+  height: 65px;
+  background-color: skyblue;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+}
+
 #basic-nav-dropdown {
   background-color: #00022e8e;
   color: white;
@@ -46,6 +60,7 @@
   top: 0px;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .basket-logo {
