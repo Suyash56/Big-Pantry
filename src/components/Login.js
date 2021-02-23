@@ -48,11 +48,11 @@ function Login() {
               </button>
               <div className="message">
                 <Link to="/">
-                  <button className="signupbtn btn-secondary Button">Home</button>
+                  <button className="signupbtn btn-secondary Button">HOME</button>
                 </Link>
                 <div>
                   <Link to="/signup">
-                    <button className="signupbtn btn-secondary Button">SignUp</button>
+                    <button className="signupbtn btn-secondary Button">SIGNUP</button>
                   </Link>
                 </div>
               </div>
