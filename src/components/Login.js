@@ -43,16 +43,16 @@ function Login() {
                   placeholder="Password"
                 />
               </div>
-              <button type="button" className="btn btn-secondary btn-block">
+              <button type="button" className="btn btn-secondary btn-block Button">
                 LOGIN
               </button>
               <div className="message">
                 <Link to="/">
-                  <button className="signupbtn btn-secondary">Home</button>
+                  <button className="signupbtn btn-secondary Button">Home</button>
                 </Link>
                 <div>
                   <Link to="/signup">
-                    <button className="signupbtn btn-secondary">SignUp</button>
+                    <button className="signupbtn btn-secondary Button">SignUp</button>
                   </Link>
                 </div>
               </div>
