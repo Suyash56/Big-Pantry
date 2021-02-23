@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Play");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+
+
+
 .loading-gif{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.App{
+  font-family: "Play", sans-serif;
 }

@@ -1,10 +1,7 @@
 import React from "react";
 
-function PaymentSlider(){
-    return (
-        <>
-        </>
-    )
+function PaymentSlider() {
+  return <></>;
 }
 
 export default PaymentSlider;

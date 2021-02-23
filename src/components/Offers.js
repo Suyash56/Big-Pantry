@@ -7,6 +7,10 @@ import drinks from "../images/offers/5.png";
 import sugar from "../images/offers/6.png";
 import biscuits from "../images/offers/7.png";
 import fruits from "../images/offers/8.png";
+import basmati from "../images/Special Offers/basmati.jpg";
+import hotSpot from "../images/Special Offers/hotSpot.jpg";
+import immunity from "../images/Special Offers/immunityBooster.jpg";
+import organic from "../images/Special Offers/organicGoodness.jpg";
 
 import "../styles/offers.css";
 
@@ -54,6 +58,21 @@ function Offers() {
     },
   ];
 
+  const specialOffers = [
+    {
+      Image: hotSpot,
+    },
+    {
+      Image: basmati,
+    },
+    {
+      Image: immunity,
+    },
+    {
+      Image: organic,
+    },
+  ];
+
   return (
     <>
       <h2>Offers On Daily Essentials</h2>
@@ -68,6 +87,12 @@ function Offers() {
           );
         })}
       </wrap>
+      <h2>Special Offers</h2>
+      <div className="specialOffers">
+        {specialOffers.map((specialOffers) => {
+          return <img src={specialOffers.Image} className="special-img" />;
+        })}
+      </div>
     </>
   );
 }
