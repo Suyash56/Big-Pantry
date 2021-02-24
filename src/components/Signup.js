@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { Link, useHistory } from "react-router-dom";
+import { ToastContainer, toast, cssTransition } from "react-toastify";
+import "animate.css/animate.min.css";
 import validator from "validator";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/signup.css";
@@ -12,6 +13,13 @@ function SignUp() {
     email: "",
     phone: "",
   });
+
+  const bounce = cssTransition({
+    enter: "animate__animated animate__bounceIn",
+    exit: "animate__animated animate__bounceOut",
+  });
+
+  const history = useHistory();
 
   const [valid, setValid] = useState(false);
 
@@ -39,7 +47,7 @@ function SignUp() {
     console.log("hii");
 
     if (userData.userName === "") {
-      toast.dark("UserName should not be empty");
+      toast.dark("Username should not be empty");
     } else if (userData.email === "") {
       toast.dark("Email should not be empty");
     } else if (!validator.isEmail(userData.email)) {
@@ -60,6 +68,9 @@ function SignUp() {
       setSubmitted(true);
       localStorage.setItem(userData.email, JSON.stringify(userData));
       setUserData({});
+      setTimeout(() => {
+        history.push("/login");
+      }, 2000);
     }
   };
 
@@ -161,8 +172,9 @@ function SignUp() {
       </div>
       <ToastContainer
         position="top-right"
-        autoClose={4000}
+        autoClose={3000}
         pauseOnHover={false}
+        transition={bounce}
       />
     </>
   );

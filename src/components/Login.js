@@ -35,7 +35,7 @@ function Login() {
         toast.dark("Login Successfully");
         setTimeout(() => {
           history.push("/");
-        }, 4000);
+        }, 2000);
       } else {
         toast.dark("Your Password is wrong");
       }
@@ -112,7 +112,7 @@ function Login() {
       </div>
       <ToastContainer
         position="top-right"
-        autoClose={4000}
+        autoClose={3000}
         pauseOnHover={false}
       />
     </div>
