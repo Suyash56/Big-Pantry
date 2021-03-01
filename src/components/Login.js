@@ -22,6 +22,7 @@ function Login() {
   };
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const Email = JSON.parse(localStorage.getItem(loginData.email));
     if (loginData.email === "") {
       toast.dark("Email should not be empty");
@@ -33,6 +34,7 @@ function Login() {
       const Password = Email.password;
       if (Password === loginData.password) {
         toast.dark("Login Successfully");
+        sessionStorage.setItem("isUserLogged", true);
         setTimeout(() => {
           history.push("/");
         }, 2000);
@@ -56,7 +58,7 @@ function Login() {
             <div className="image"></div>
           </div>
           <div className="body-form">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
@@ -86,9 +88,8 @@ function Login() {
                 />
               </div>
               <button
-                type="button"
+                type="submit"
                 className="btn btn-secondary btn-block Button"
-                onClick={handleSubmit}
               >
                 LOGIN
               </button>

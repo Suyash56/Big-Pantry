@@ -1,9 +1,10 @@
-import { React, useState } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { React } from "react";
+import { Link } from "react-router-dom";
 import "../styles/header.css";
 import logo from "../images/logo.png";
 import user from "../images/user.png";
 import { FaShoppingBasket } from "react-icons/fa";
+import { CgLogIn, CgLogOut } from "react-icons/cg";
 
 import {
   Form,
@@ -15,6 +16,10 @@ import {
 } from "react-bootstrap";
 
 function Header() {
+  const loggedOut = () => {
+    sessionStorage.removeItem("isUserLogged");
+  };
+
   return (
     <>
       <Navbar className="nav" expand="lg" fixed="top">
@@ -46,11 +51,22 @@ function Header() {
             />
             <Button>Search</Button>
           </Form>
-          <Link to="/login" className="link">
-            <button className="userLogin">
-              <img src={user} alt="Login/SignUp" className="user"></img>
-            </button>
-          </Link>
+
+          {sessionStorage.getItem("isUserLogged") ? (
+            <div>
+              <Link to="/">
+                <button onClick={loggedOut} className="userLogin">
+                  <CgLogOut />
+                </button>
+              </Link>
+            </div>
+          ) : (
+            <div className="userLogin">
+              <Link to="/login">
+                <CgLogIn />
+              </Link>
+            </div>
+          )}
           <Nav>
             <div className="basket">
               <div className="basket-logo">
